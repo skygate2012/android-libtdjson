@@ -87,16 +87,16 @@ TODO
 
 ## Dev memo
 
-> Bump the version of tdlib
+### Bump the version of tdlib
 
 - Modify the version for git checkout in `./prepare.sh`
-  - Keep in mind, there may not be version tags for tdlib. So have to find the hash id of the commit for that version.
 - Modify the getVersionName function in `./app/build.gradle`
-- Commit and add tag (`git tag vx.x.x`, same as the version of tdlib)
+- Git commit (message example: `bump td to vx.x.x`)
+- Git add tag (`git tag vx.x.x`, the version should be same as the version of tdlib)
 - Push with tags (`git push && git push --tags`)
 - Wait for CI task
 
-> Build on local, see `.github/workflows/main.yml` also
+### Build on local, see `.github/workflows/main.yml` also
 
 ```console
 $ docker run --rm -it -v `pwd`:/app sstc/android-ndk /bin/bash
@@ -104,7 +104,7 @@ $ docker run --rm -it -v `pwd`:/app sstc/android-ndk /bin/bash
 # ./build.sh
 ```
 
-> Cleanup generated .so files for strip testing
+### Cleanup generated .so files for strip testing
 
 ```bash
 rm -fr \
