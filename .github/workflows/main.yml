@@ -14,7 +14,7 @@ jobs:
         GITHUB_ACTOR: ${{ github.actor }}
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v4
       - run: ./build.sh
       - run: |
           tar -czvf libs.tar.gz libs

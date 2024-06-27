@@ -92,7 +92,7 @@ TODO
 - Modify the version for git checkout in `./prepare.sh`
 - Modify the getVersionName function in `./app/build.gradle`
 - Git commit (message example: `bump td to vx.x.x`)
-- Git add tag (`git tag vx.x.x`, the version should be same as the version of tdlib)
+- Git add tag (`git tag vx.x.x`, the tag version should be same as the version of tdlib)
 - Push with tags (`git push && git push --tags`)
 - Wait for CI task
 
