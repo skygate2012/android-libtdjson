@@ -13,7 +13,7 @@ if [ ! -d "td" ]; then
 	# git checkout tags/v1.8.31
 	# - Click the commit link
 	# - Copy the commit hash from the browser url link (e.q. https://github.com/tdlib/td/commit/<hash>) and paste it to:
-	git checkout 8f19c751dc296cedb9a921badb7a02a8c0cb1aeb
+	git checkout 5b974c298d4ed551d3ad2c061ad7b8280d137c7e
 	cd ..
 fi
 
